@@ -71,7 +71,7 @@ contract Client {
 contract Insure {
     Client client;
 
-    Client[] public clients_list;
+    mapping(string => Client) public clients_list;
 
     function newClient(
         string memory _uniqueId,
@@ -94,16 +94,16 @@ contract Insure {
             _end
         );
 
-        clients_list.push(client);
+        clients_list[_uniqueId] = client;
 
         // check if the client has pushed to the list.
         require(
-            address(clients_list[clients_list.length - 1]) == address(client),
+            address(clients_list[_uniqueId]) == address(client),
             "Client creation failed."
         );
 
         // Will be given to client as his unique identification string
         // So that he can use it later in future for claim.
-        return address(clients_list[clients_list.length - 1]);
+        return address(clients_list[_uniqueId]);
     }
 }
