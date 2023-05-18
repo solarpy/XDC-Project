@@ -11,14 +11,14 @@ export default function Card() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "260px",
-        height: "300px",  
+        height: "300px",
       }}
       className="ease-in duration-800 delay-50 static shadow-md shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div hover:opacity-40"
     >
       <div className="hidden ease-in duration-1000 delay-500 group-hover:contents hover:opacity-100">
         <div>
-           <div className="flex  justify-center -mt-10">
+          <div className="flex  justify-center -mt-10">
             <svg
               className="bg-red-400 rounded-full p-3 "
               width="48"
@@ -44,11 +44,12 @@ export default function Card() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-white"> Life Insurance</h1>
-          <p className="text-base text-white"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda</p>
-          </div>
-
+          <p className="text-base text-white">
+            {" "}
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+          </p>
+        </div>
       </div>
-
 
       <div className="h-full ease-out duration-800 delay-200  group-hover:hidden w-full flex items-end justify-center">
         <div className="py-5 px-14 -m-10 rounded-lg absolute bg-white">

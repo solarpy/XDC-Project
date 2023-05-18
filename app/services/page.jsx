@@ -9,10 +9,10 @@ export default function Services() {
         <Header />
         <div className="grid gap-12 grid-cols-4 m-6 pt-12">
           <Card />
-             <Card />
-                <Card />
-                
-                <Card />
+          <Card />
+          <Card />
+
+          <Card />
         </div>
       </div>
     </div>
